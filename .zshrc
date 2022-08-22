@@ -1,0 +1,1 @@
+/Users/lucian.park/.zshrc
