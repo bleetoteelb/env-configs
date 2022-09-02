@@ -7,20 +7,24 @@ local config = {
   cmd = {
 
     -- 💀
-    'java',
+    '/Users/lucian.park/.jenv/versions/openjdk64-17.0.4/bin/java',
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
     '-Dosgi.bundles.defaultStartLevel=4',
     '-Declipse.product=org.eclipse.jdt.ls.core.product',
     '-Dlog.protocol=true',
     '-Dlog.level=ALL',
     '-Xms1g',
+    '-javaagent:/Users/lucian.park/.local/share/nvim/lsp_servers/lombok/lombok.jar',
+    '-Xbootclasspath/a:/Users/lucian.park/.local/share/nvim/lsp_servers/lombok/lombok.jar',
     '--add-modules=ALL-SYSTEM',
     '--add-opens', 'java.base/java.util=ALL-UNNAMED',
     '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
 
     -- 💀
-    '-jar', jdtlsPath .. '/plugins/org.eclipse.equinox.launcher_org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
-    '-configuration', jdtlsPath .. '/config_mac',
+    -- '-jar', '/Users/lucian.park/.local/share/nvim/lsp_servers/jdtls/plugins/org.eclipse.equinox.launcher_org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
+    '-jar', '/Users/lucian.park/.local/share/nvim/lsp_servers/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
+    
+    '-configuration', '/Users/lucian.park/.local/share/nvim/lsp_servers/jdtls/config_mac',
     '-data', workspace_dir
   },
 

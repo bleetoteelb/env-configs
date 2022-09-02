@@ -47,7 +47,7 @@ function M.setup()
         use {'vim-airline/vim-airline'}
         use {'vim-airline/vim-airline-themes'}
         use {'mg979/vim-visual-multi', branch='master'}
-        use {'preservim/nerdcommenter'}
+        use {'terrortylor/nvim-comment'}
         use {'kylechui/nvim-surround'}
         use {'mvllow/modes.nvim'}
         use {'norcalli/nvim-colorizer.lua'}
